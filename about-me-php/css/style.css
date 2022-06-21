@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* cores::
+    Escura- #3B3B4E
+    verde - #769B0D
+    amarelado - #F8C460*/
+
+.corpo{
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-style: italic;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p{
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.index-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-content{
+    box-shadow: 0px 0px 3px black;
+    border-radius: 12px;
+    background-color: white;  
+    max-width:500px;
+    margin-top: 6%;
+}
+
+.info-content > h1{
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+
+
+.info-content > p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.img-history{
+    max-width: 600px;
+    margin-top: 10%;
+}
+
+.empregos > li{
+    margin-bottom: 0.3em;
+}
+
+.button{
+    margin-left:20px;
+    margin-bottom: 10px;
+}
+
+
+.container-sm{
+    border: 5px solid black;
+    margin: 20px; 
+    margin-bottom: 20px;
+    padding: 10px;
+}
