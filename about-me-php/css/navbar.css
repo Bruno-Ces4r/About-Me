@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegacao{ /*Navbar completa*/
+    background-color: #3b3b4E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px #000000;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+}
+
+.navegacao > div > a{
+    text-decoration: none;  
+    color: white;
+}
+
+.navegacao > div > a:hover{
+    text-decoration: underline;
+}
+
+
+.navega{ /*Da palavra home até contatos*/
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-between;
+}
+
+
+.img-logo{
+    margin-left: 60px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.img-perfil{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 60px;
+}
