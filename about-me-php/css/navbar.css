@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegacao{ /*Navbar completa*/
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px  white;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.navegacao > div > a{
+    text-decoration: none; 
+    color: rgb(54, 54, 54);
+}
+
+
+
+
+.portfolio{
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+}
+
+
+
+.navega{ /*Da palavra home até contatos*/
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.navega > a{
+    padding-right: 2em;
+}
+
+.navega > a:hover{
+    text-decoration: underline;
+}
+
+
+.img-logo{
+    width: 80px;
+}
