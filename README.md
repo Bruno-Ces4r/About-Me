@@ -8,8 +8,6 @@
 <h3 align='center'> <b> Página Inicial </b> </h3>
 <hr>
 
-<h2 align='center'>Comando SQL</h2>
-<hr>
 <h3 align='center'>Table do Admin</h3>
 <hr>
 
