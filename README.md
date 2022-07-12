@@ -14,16 +14,16 @@
 <hr>
 
 create table tb_admin(
-	id int not null primary key auto_increment,
-    nome varchar(255) not null,
-    email varchar(255) not null,
-    matricula varchar(255) not null,
-    senha varchar(255) not null,
-    dia_inclusao datetime not null,
-    dia_exclusao datetime,
-    username_inclusao varchar(255) not null,
-    username_exclusao varchar(255),
-    validacao int not null
+    id int not null primary key auto_increment,<hr>
+    nome varchar(255) not null,<hr>
+    email varchar(255) not null,<hr>
+    matricula varchar(255) not null,<hr>
+    senha varchar(255) not null,<hr>
+    dia_inclusao datetime not null,<hr>
+    dia_exclusao datetime,<hr>
+    username_inclusao varchar(255) not null,<hr>
+    username_exclusao varchar(255),<hr>
+    validacao int not null<hr>
 );
 
 
