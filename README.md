@@ -8,5 +8,22 @@
 <h3 align='center'> <b> Página Inicial </b> </h3>
 <hr>
 
-![index](https://user-images.githubusercontent.com/102826415/174600966-1bf95f8c-7ec2-4161-8007-d1776cb5cd14.png)
+<h2>Comando SQL</h2>
+<hr>
+<h3>Table do Admin</h3>
+<hr>
+
+create table tb_admin(
+	id int not null primary key auto_increment,
+    nome varchar(255) not null,
+    email varchar(255) not null,
+    matricula varchar(255) not null,
+    senha varchar(255) not null,
+    dia_inclusao datetime not null,
+    dia_exclusao datetime,
+    username_inclusao varchar(255) not null,
+    username_exclusao varchar(255),
+    validacao int not null
+);
+
 
