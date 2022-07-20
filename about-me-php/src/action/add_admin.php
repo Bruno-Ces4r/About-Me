@@ -5,11 +5,11 @@
     require_once("./conexao.php");
     $db = conecta();
 
-    if(isset($_POST['username']) && isset($_POST['password'])){
+    if(isset($_POST['matricula']) && isset($_POST['password']) && isset($_POST['nome']) && isset($_POST['email'])){
         
         $nome = $_POST['nome'];
         $email = $_POST['email'];
-        $matricula = $_POST['username'];
+        $matricula = $_POST['matricula'];
         $password = $_POST['password'];
         $dia_inclusao = date("Y-m-d H:i:s");
         $user_add = $_SESSION['matricula'];

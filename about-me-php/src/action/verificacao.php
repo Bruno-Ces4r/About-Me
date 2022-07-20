@@ -26,5 +26,4 @@
         #Vou Retornar um erro pra ele e deixar ele na mesma página
         header("Location:./../login/login.php");
     }
-
 ?>

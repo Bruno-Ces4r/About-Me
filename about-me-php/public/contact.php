@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
     <title>Contact</title>
@@ -18,17 +19,35 @@
     <section class="main-contact">
 
         <section class="contact-description">
-            <h1>Contact Me, Tell me about projects,ideas or opportunities</h1>
-            <p>If you want to talk about a project,idea or some oportunity please get in touch or provide your contact email.</p>
+            <h1>Contact Me!</h1>
+            <p style="margin-bottom:5px;">If you want to talk about a project,idea or some oportunity please get in touch or provide your contact email.</p>
             <p>Let's create something together 🚀🤟</p>
 
+            <div class="dropdown">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                My Contacts
+            </button>
+
+                <ul class="dropdown-menu">
+
+                    <li><img src="../image/linkedin.png" alt="" title="Linkedin" class="contact-page"> <a href="https://www.linkedin.com/in/bruno-c%C3%A9sar-659045206/" target="__blank" class="my-contacts">Bruno César</a></li>
+
+                    <li><img src="../image/email.png" alt="" title="E-mail" class="contact-page"> <a href="mailto:bruno.reis.profissional@gmail.com" target="__blank" class="my-contacts">bruno.reis.profissional@gmail.com</a></li>
+                    
+                    <li><img src="../image/github.png" alt="" title="GitHub" class="contact-page"> <a href="https://github.com/Bruno-Ces4r" target="__blank" class="my-contacts">Bruno-Ces4r</a></li>
+
+                    <li><img src="../image/instagram.png" alt="" title="Instagram" class="contact-page"> <a href="https://www.instagram.com/bruno.cesar1/" target="__blank" class="my-contacts">Bruno.cesar1</a></li>
+
+                </ul>
+            </div>
+<!--             
             <p class="box-contact"><img src="../image/linkedin.png" alt="" title="Linkedin" class="contact-page"> <a href="https://www.linkedin.com/in/bruno-c%C3%A9sar-659045206/" target="__blank" class="my-contacts">Bruno César</a> </p>
 
             <p class="box-contact"><img src="../image/email.png" alt="" title="E-mail" class="contact-page"> <a href="mailto:bruno.reis.profissional@gmail.com" target="__blank" class="my-contacts">bruno.reis.profissional@gmail.com</a></p>
 
             <p class="box-contact"><img src="../image/github.png" alt="" title="GitHub" class="contact-page"> <a href="https://github.com/Bruno-Ces4r" target="__blank" class="my-contacts">Bruno-Ces4r</a> </p>
             
-            <p class="box-contact"><img src="../image/instagram.png" alt="" title="Instagram" class="contact-page"> <a href="https://www.instagram.com/bruno.cesar1/" target="__blank" class="my-contacts">Bruno.cesar1</a> </p>
+            <p class="box-contact"><img src="../image/instagram.png" alt="" title="Instagram" class="contact-page"> <a href="https://www.instagram.com/bruno.cesar1/" target="__blank" class="my-contacts">Bruno.cesar1</a> </p> -->
         </section>
 
         <section class="controle-contact">
@@ -63,7 +82,7 @@
     
 
         </section>
-        <footer class="development-by">
+        <footer class="development-by"> 
             Development by BC Developer
             <a href="https://www.instagram.com/bruno.cesar1/" target="__blank"><img src="../image/instagram.png" alt="" title="Instagram" class="img-contact"></a>
 

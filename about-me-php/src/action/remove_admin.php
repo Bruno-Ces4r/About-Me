@@ -5,15 +5,15 @@
     require_once("./conexao.php");
     $db = conecta();
 
-    if(isset($_POST['username'])){
+    if(isset($_POST['matricula'])){
         
-        $username = $_POST['username'];
+        $matricula = $_POST['matricula'];
         $dia_exclusao = date("Y-m-d H:i:s");
-        $user_exclusao = $_SESSION['matricula'];
+        $matricula_exclusao = $_SESSION['matricula'];
         $validacao = 0;
     }
 
-    $sql = "UPDATE tb_admin set dia_exclusao = '$dia_exclusao', username_exclusao = '$user_exclusao', validacao = '$validacao' WHERE matricula = '$matricula'";
+    $sql = "UPDATE tb_admin set dia_exclusao = '$dia_exclusao', username_exclusao = '$matricula_exclusao', validacao = '$validacao' WHERE matricula = '$matricula'";
 
     $query = $db->query( $sql );
     if($query == false){

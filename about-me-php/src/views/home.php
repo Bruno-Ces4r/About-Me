@@ -1,5 +1,8 @@
 <?php 
-session_start();
+
+if(!(session_start())){
+    session_start();
+}
 
 if(!($_SESSION['matricula'])){
     header("location:./../login/login.php");

@@ -17,7 +17,7 @@ function validar(evento){
         resultado("Preencha todos os campos por Gentileza!", false);
     }
     if(!nome.trim() || !email.trim() || !oportunidade.trim()){
-        resultado("Não pode enviar com campos em branco", false);
+        resultado("Não é permitido o envio com campos em branco !", false);
     }
     else{
         resultado("Dados Enviados com Sucesso!", true);

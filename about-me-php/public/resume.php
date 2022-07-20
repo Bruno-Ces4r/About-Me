@@ -12,13 +12,33 @@
 </head>
 <body class="corpo">
     <?php include_once("./componentes/navbar.php") ?>
+    
+    <section class="my-photo">
+        <div class="shadow">
+            <div class="circle">
+                <img src="./../image/foto-bruno.jpg" alt="oi" class="perfil-photo">
+            </div>
+        </div>
+    </section>
 
-    <h1>Adicionar o Curriculo aqui</h1>            
     <section>
-        <h3 style="margin-bottom:0.5em;">Most relevant experiences:</h3>
+        <h1 class="information" style="font-size:2.2em;">Bruno César Camargo dos Reis</h1>
+    
+        <p class="information">Intern in the Technology team at BB Seguros | Full Stack Developer | JavaScript | PHP | Sql | Python | HTML5 | CSS3 </p>
+    </section>
+    
+
+
+    <section class="experiences">
+        
+        <h2>Most relevant experiences:</h2>
         <ul class="empregos">
             <li>
-                Banco do Brasil Seguros - Trainee
+                Banco do Brasil Seguros:
+                <br>
+                <b>17/01/2022 - Current</b>
+                <br>
+                <b>trainee of technology</b>
             </li>
             <li>
                 Uniceub - Project Social Monitor
@@ -27,6 +47,8 @@
         <a href="./history.php"><button type='button' class="btn btn-success">Learn More</button></a>
     </section>
     
+
+
     <section>
         <h2>Competencias</h2>
         <p>Inteligência Emocional</p>
@@ -36,6 +58,8 @@
         <p>Power BI (Aperfeiçoamento em adamento)</p>
     </section> 
     
+
+
     <footer class="development-by">
         Development by BC Developer
         <a href="https://www.instagram.com/bruno.cesar1/" target="__blank"><img src="../image/instagram.png" alt="" title="Instagram" class="img-contact"></a>

@@ -13,8 +13,8 @@
         <div class="modal-body">
 
           <div class="mb-3">
-            <label for="nome" class="form-label">Username:</label>
-            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+            <label for="matricula" class="form-label">Matricula:</label>
+            <input type="text" class="form-control" name="matricula" id="matricula" placeholder="matricula" required>
           </div>
         </div>
 

@@ -1,8 +1,3 @@
-<?php 
-session_start();
-?>
-
-
 <nav class="navegacao">
     <div class="portfolio">
         <a href=""><img src="./../../image/logo-wolf-white.png" alt="logo" class="img-logo"></a> <!--Criar uma logo minha-->
