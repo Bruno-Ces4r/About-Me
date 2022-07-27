@@ -1,5 +1,7 @@
 <?php
     function conecta(){
+        oii
+        olá
         $host = '';
         $user = '';
         $password = '';
