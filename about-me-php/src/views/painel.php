@@ -6,20 +6,8 @@ if(!($_SESSION['matricula'])){
 }
 
 require_once("./../action/conexao.php");
-$db = conecta();
-
-$ativos = "SELECT COUNT(id) from tb_admin WHERE validacao = 1";
-
-$on = $db ->query( $ativos );
-
-$registros_ativos = $on->fetchall();
 
 
-$inativos = "SELECT COUNT(id) from tb_admin where validacao = 0";
-
-$off = $db ->query( $inativos );
-
-$registros_inativos = $off->fetchall();
 ?>
 
 <!DOCTYPE html>
@@ -59,6 +47,8 @@ $registros_inativos = $off->fetchall();
     <?php require_once("./../js/admin-graphic.php") ?>
 
     <?php require_once("./../js/mensal.php") ?>
+
+
 
  
 </body>

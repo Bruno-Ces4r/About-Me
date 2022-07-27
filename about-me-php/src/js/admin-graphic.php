@@ -1,13 +1,17 @@
 <?php 
 
-
-foreach($registros_ativos as $on){
-    $ativos = $on[0];
+function admins($valida){
+    $db = conecta();
+    $sql = 'SELECT COUNT(id) from tb_admin where validacao = '.$valida.' ';
+    $query = $db ->query( $sql );
+    $registros = $query ->fetchall();
+    
+    foreach($registros as $total){
+        $num = $total[0];
+    }
+    return $num;
 }
 
-foreach($registros_inativos as $off){
-    $inativos = $off[0];
-}
 ?>
 
 
@@ -19,7 +23,7 @@ const data = {
     ],
     datasets: [{
         label: 'Gerenciamento de Administradores',
-        data: [<?php echo($ativos); ?>, <?php echo($inativos) ?>],
+        data: [<?php echo(admins(1)); ?>, <?php echo(admins(0)); ?>],
         backgroundColor: [
         'green',
         'red',

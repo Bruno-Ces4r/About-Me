@@ -1,24 +1,19 @@
 <?php 
 #Criar Função que manipula o mês, dá menos trabalho
 
-$janeiro = "SELECT count(id) from tb_contact WHERE dia_inclusao LIKE '2022-01%' ";
+function mensal($data){
+  $db = conecta();
+  $mes = 'SELECT count(id) from tb_contact WHERE dia_inclusao LIKE "'.$data.'" ';
 
-$total_janeiro = $db->query( $janeiro );
-$registros_janeiro = $total_janeiro->fetchall();
+  $total_mes = $db->query( $mes );
+  $registros_mes = $total_mes->fetchall();
+  
+  foreach($registros_mes as $registros_mes){
+      $mes_informado = $registros_mes[0];
+  }
 
-foreach($registros_janeiro as $registros_janeiro){
-    $mes_janeiro = $registros_janeiro[0];
+  return $mes_informado;
 }
-
-$julho = "SELECT count(id) from tb_contact WHERE dia_inclusao LIKE '2022-07%' ";
-
-$total_julho = $db->query( $julho );
-$registros_julho = $total_julho->fetchall();
-
-foreach($registros_julho as $registros_julho){
-    $mes_julho = $registros_julho[0];
-}
-
 
 ?>
 
@@ -31,7 +26,7 @@ const datando = {
   labels: labels,
   datasets: [{
     label: 'Contacts 2022',
-    data: [<?php echo($mes_janeiro) ?>, 2, 3, 4, 5, 6, <?php echo($mes_julho);?>,8,9,10,11,12],
+    data: [<?php echo(mensal('2022-01%')); ?>, <?php echo(mensal('2022-02%')); ?>, <?php echo(mensal('2022-03%')); ?>, <?php echo(mensal('2022-04%')); ?>, <?php echo(mensal('2022-05%')); ?>, <?php echo(mensal('2022-06%')); ?>, <?php echo(mensal('2022-07%')); ?>, <?php echo(mensal('2022-08%')); ?>, <?php echo(mensal('2022-09%')); ?>, <?php echo(mensal('2022-10%')); ?>, <?php echo(mensal('2022-11%')); ?>, <?php echo(mensal('2022-12%')); ?>],
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
       'rgba(255, 159, 64, 0.2)',
