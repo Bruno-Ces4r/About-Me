@@ -1,6 +1,6 @@
 <?php
     function conecta(){
-        $host = 'localhost:3306';
+        $host = 'localhost:33067';
         $user = 'root';
         $password = 'Deckcity147';
         $database = 'about_me';
