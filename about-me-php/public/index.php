@@ -11,37 +11,48 @@
     <title>About Me</title>
 </head>
 <body class="corpo" >
-    
-    <?php include_once("./componentes/navbar.php"); ?>
 
-    
-    <section class="main-content">
-        <div class="left-content">
-            <div class="info-content">
-                <h5>Welcome!</h5>
-                <h1>I'm Full Stack Developer Bruno C. Camargo</h1>
-                <p>This WebSite was created with the intencion of publicizing my portfolio, covering my professional history, resume and a way for people to get in touch with me.</p>
-                <a href="./history.php"><button type='button' class="btn btn-success button">Learn More</button></a>
-                <a href="./contact.php" style="margin-left:0.8em;"><button type='button' class="btn btn-secondary button">Contact</button></a>
+    <div class="pagina">
+        <header>
+            <?php include_once("./componentes/navbar.php"); ?>
+        </header>
+
+        <main>
+            <section class="main-content">
+                <div class="left-content">
+                    <div class="info-content">
+                        <h5>Welcome!</h5>
+                        <h1>I'm Full Stack Developer Bruno C. Camargo</h1>
+                        <p>This WebSite was created with the intencion of publicizing my portfolio, covering my professional history, resume and a way for people to get in touch with me.</p>
+                        <a href="./history.php"><button type='button' class="btn btn-success button">Learn More</button></a>
+                        <a href="./contact.php" style="margin-left:0.8em;"><button type='button' class="btn btn-secondary button">Contact</button></a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <!-- COLOCAR UMA IMAGEM SEM FUNDO AQUI -->
+                    <img src="../image/foto-bruno.jpg" alt="history" class="img-history">
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="development-by">
+
+                Development by BC Developer
+                <a href="https://www.instagram.com/bruno.cesar1/" target="__blank"><img src="../image/instagram.png" alt="" title="Instagram" class="img-contact"></a>
+        
+                <a href="https://www.linkedin.com/in/bruno-c%C3%A9sar-659045206/" target="__blank"><img src="../image/linkedin.png" alt="" title="Linkedin" class="img-contact"></a>
+        
+                <a href="mailto:bruno.reis.profissional@gmail.com" target="__blank"><img src="../image/email.png" alt="" title="E-mail" class="img-contact"></a>
+        
+                <a href="https://github.com/Bruno-Ces4r" target="__blank"><img src="../image/github.png" alt="" title="GitHub" class="img-contact"></a>
+
             </div>
-        </div>
-        <div class="right-content">
-            <!-- COLOCAR UMA IMAGEM SEM FUNDO AQUI -->
-            <img src="../image/foto-bruno.jpg" alt="history" class="img-history">
-        </div>
-    </section>
+        </footer>
+            <!--Interessante Colocar um modo Escuro,caso o usuário queira usar, é possível fazer isso com JavaScript-->
 
-
-    <footer class="development-by">
-        Development by BC Developer
-        <a href="https://www.instagram.com/bruno.cesar1/" target="__blank"><img src="../image/instagram.png" alt="" title="Instagram" class="img-contact"></a>
-
-        <a href="https://www.linkedin.com/in/bruno-c%C3%A9sar-659045206/" target="__blank"><img src="../image/linkedin.png" alt="" title="Linkedin" class="img-contact"></a>
-
-        <a href="mailto:bruno.reis.profissional@gmail.com" target="__blank"><img src="../image/email.png" alt="" title="E-mail" class="img-contact"></a>
-
-        <a href="https://github.com/Bruno-Ces4r" target="__blank"><img src="../image/github.png" alt="" title="GitHub" class="img-contact"></a>
-    </footer>
-        <!--Interessante Colocar um modo Escuro,caso o usuário queira usar, é possível fazer isso com JavaScript-->
+    </div>
+    
 </body>
 </html>
